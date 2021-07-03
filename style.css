@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap");
 /*
     font-family: 'Raleway', sans-serif;
 */
@@ -21,16 +21,28 @@ html {
 .text-custom-small {
   font-family: "Raleway", sans-serif !important;
   color: rgb(0, 120, 168) !important;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .text-custom-small-btn {
   font-family: "Raleway", sans-serif !important;
   color: rgb(0, 120, 168) !important;
-  font-weight: 400;
+  font-weight: 500;
 }
 .text-custom-small-btn:hover{
   color: rgb(240,128,43) !important;
+}
+
+.text-custom-small-link {
+  font-family: "Raleway", sans-serif !important;
+  color: rgb(0, 119, 255) !important;
+  font-weight: 500;
+}
+
+.text-custom-small-link:hover{
+  font-family: "Raleway", sans-serif !important;
+  color: rgb(240,128,43) !important;
+  font-weight: 700;
 }
 
 .text-navbar {
