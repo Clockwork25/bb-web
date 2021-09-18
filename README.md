@@ -1,2 +1,0 @@
-# bb-web
- Homepage
