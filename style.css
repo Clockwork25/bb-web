@@ -118,6 +118,13 @@ padding-inline: 2rem !important;
   --bs-gutter-x: 1 !important;
 }
 
+.rekv{
+  display: grid;
+	position: relative;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
+	margin: 0px;
+}
 
 @media (min-width: 800px) {
   .grid-container{
