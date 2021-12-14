@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
+  <link type="text/css" id="dark-mode" rel="stylesheet" href="" />
+  <style type="text/css" id="dark-mode-custom-style"></style>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BALTĀ BŪVE</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link href="./Features · Bootstrap v5.1_files/features.css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Baltā Būve - Pakalpojumi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="img/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-32x32.ico"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="img/favicon-16x16.ico"
+      sizes="16x16"
+      type="image/png"
+    />
+
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#3a6e9c" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="theme-color" content="#3a6e9c" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="pakalpojumi.css" />
   </head>
   <body>
     <script
@@ -25,188 +75,267 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <nav
-      class="navbar navbar-expand-md navbar-dark bg-info"
-      style="background-color: rgb(0, 120, 168) !important"
-    >
-      <a class="navbar-brand text-navbar" href="index.html">BALTĀ BŪVE</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <script src="scroll.js"></script>
+    <header class="site-header sticky-top py-1">
+      <nav
+        class="navbar navbar-expand-md navbar-dark"
+        style="background-color: rgb(0, 120, 168) !important"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav text-center">
-          <a class="nav-item nav-link text-light text-navbar" href="index.html"
-            >Galvenā</a
-          >
-          <a
-            class="nav-item nav-link text-light text-navbar"
-            href="pakalpojumi.html"
-            >Pakalpojumi</a
-          >
-          <a
-            class="nav-item nav-link text-light text-navbar"
-            href="kontakti.html"
-            >Kontakti</a
-          >
+        <a class="navbar-brand text-navbar" href="index.html">BALTĀ BŪVE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center">
+            <a
+              class="nav-item nav-link text-light text-navbar"
+              href="index.html"
+              >Galvenā</a
+            >
+            <a
+              class="nav-item nav-link text-light text-navbar"
+              href="pakalpojumi.html"
+              >Pakalpojumi</a
+            >
+            <a
+              class="nav-item nav-link text-light text-navbar"
+              href="kontakti.html"
+              >Kontakti</a
+            >
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="jumbotron text-center bg-light">
-      <h1 class="text-custom-big"><br/>Pakalpojumi</h1>
-<!--       <div class="grid-container">
-        <ul class="grid-cotainer-text text-custom-small">Būvdarbu vadīšana</ul>
-        <ul class="grid-cotainer-text text-custom-small">Pirmsiegādēs īpašuma attīstības izvertēšana</ul>
-        <ul class="grid-cotainer-text text-custom-small">Īpašumu un būvdarbu konsultācijas</ul>
-      </div> -->
-      <p class="text-custom-small hero-small-text">
-       <!--  <br/><br/>Būvniecības procesa vadība un ar to saistītās konsultācijas, kas ietver pasūtītāja interešu pārstāvniecību un juridisko palīdzību pilna cikla būvniecības procesā. 
-        <br/><br/>Novērtējam nekustamo īpašumu atbilstību pasūtītāja iecerei.
-        <br/><br/>Izvērtējot Eiropas Savienības, Latvijas un konkrētās pašvaldības normatīvo aktu prasības, piedāvājam klientam ekonomiski izdevīgāko vietu un variantu būvniecības ieceres īstenošanai.
-        <br/><br/>Sniedzam ekspertu atbalstu klientiem nekustamo īpašumu attīstības lēmumu pieņemšanā un izdevīgāko alternatīvu izvēlē.
-        <br/><br/>Sastādām “ceļa karti” attīstītāja izvēlētās ieceres īstenošanai jebkurā nekustamajā īpašumā.
-        <br/><br/>Pasūtītāja vārdā organizējam būvniecības ieceres virzību būvvaldē, vides un citās valsts un pašvaldību institūcijās. </p> -->
-    </div>
+      </nav>
+    </header>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 py-5">
-      <div href="nod-eks.html" class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Objektu nodošanu ekspluatācijā</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Ēku un infrastruktūras objektu būvuzraudzību</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Ēku pārbūves būvuzraudzību</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Ēku renovācijas būvuzraudzību</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Ēku energoefektivitātes paaugstināšanas un siltināšanas darbu būvuzraudzību</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Būvuzraudzību saskaņā ar FIDIC līgumu nosacījumu prasībām</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Būvniecības līgumu uzraudzību</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Pasūtītāja interešu pārstāvniecību</h4>
-          <p>Pasūtītāja interešu pārstāvniecību būvniecības procesā gan veicot celtniecības, gan projektēšanas darbus, gan būvuzraudzībā</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Celtniecības variantu tehnisko un ekonomisko analīzi</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Dokumentu sagatavošanu atļauju  saņemšanai</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Būvdarbu vadīšanu un organizēšanu</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Pasūtītāja vajadzību realizēšanai</h4>
-          <p>Labāko risinājumi pasūtītāja vajadzību realizēšanai, efektivizējot darbu izpildes struktūru un termiņus</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">LABOT!!!  Juridiski atbilstošas publisko iepirkumu kārtības organizēšanā</h4>
-          <p>Konsultācijas valsts un pašvaldību iestādēm juridiski atbilstošas publisko iepirkumu kārtības organizēšanā</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">LABOT!!! Uzņēmumiem sabiedrisko pakalpojumu piedāvājumu sagatavošanā</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">Konsultācijas piegāžu, pakalpojumu un būvdarbu līgumu administrēšanā</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">LABOT!!! Būvdarbu juridiskās atbilstības auditu</h4>
-          <p>Eiropas Savienības fondu finansēto un citu  projektu ietvaros plānotiem projektiem un veiktiem būvdarbiem</p>
-        </div>
-      </div>
-      <div class="col d-flex align-items-start">
-        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-        <div>
-          <h4 class="fw-bold mb-0">LABOT!!! Pirmsaudita konsultācijas Eiropas Savienības fondu finansējuma saņēmējiem</h4>
-          <p>Dokumentācijas pārbaude un konsultācijas iespējamo trūkumu novēršanai</p>
-        </div>
-      </div>
-      
-    </div>
-
-    <footer class="fixed-bottom bg-light text-center text-white">
+    <main>
       <div
-        class="text-center p-1 text-navbar"
-        style="background-color: rgb(0, 120, 168)"
+        class="
+          position-relative
+          overflow-hidden
+          p-3 p-md-5
+          m-md-3
+          text-center
+          bg-light
+        "
       >
-        © 2021
-        <a class="text-white text-navbar">SIA "BALTĀ BŪVE"</a>
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Pakalpojumi</h1>
+          <p class="lead fw-normal">Šķirsti uz leju lai uzzinātu</p>
+          <a
+            class="btn btn-outline-secondary"
+            href="#"
+            onclick="smoothScroll(document.getElementById('scrollTo'))"
+            >Coming soon</a
+          >
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div
+          class="product-device product-device-2 shadow-sm d-none d-md-block"
+        ></div>
+      </div>
+
+      <div id="scrollTo" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="
+            bg-dark
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center text-white
+            overflow-hidden
+          "
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-dark shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-dark shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+        <div
+          class="
+            bg-primary
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center text-white
+            overflow-hidden
+          "
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-light shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-body shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-body shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 p-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-body shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+        <div
+          class="
+            bg-light
+            me-md-3
+            pt-3
+            px-3
+            pt-md-5
+            px-md-5
+            text-center
+            overflow-hidden
+          "
+        >
+          <div class="my-3 py-3">
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
+          </div>
+          <div
+            class="bg-body shadow-sm mx-auto"
+            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
+          ></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img src="img/bb.png" />
+          <small class="d-block mb-3 text-muted">© 2021</small>
+        </div>
       </div>
     </footer>
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
