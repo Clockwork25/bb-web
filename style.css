@@ -145,8 +145,8 @@ html {
     grid-template-rows: repeat(1, 1fr);
     margin-top: 3rem;
   }
-  #gallery {
-    height: 500px !important;
+  .swiper {
+    height: 400px !important;
   }
 }
 
