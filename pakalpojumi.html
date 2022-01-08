@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
   <link type="text/css" id="dark-mode" rel="stylesheet" href="" />
   <style type="text/css" id="dark-mode-custom-style"></style>
   <head>
@@ -58,8 +58,11 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="pakalpojumi.css" />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -75,45 +78,56 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="scroll.js"></script>
-    <header class="site-header sticky-top py-1">
+
+
+
+    <button
+    type="button"
+    class="btn btn-floating btn-lg"
+    id="btn-back-to-top"
+    ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg></button>
+    <script src="back-to-top.js"></script>
+
+
+
+
+
       <nav
-        class="navbar navbar-expand-md navbar-dark"
-        style="background-color: rgb(0, 120, 168) !important"
+      class="navbar navbar-expand-md navbar-dark bg-info"
+      style="background-color: rgb(0, 121, 164) !important"
+    >
+      <a class="navbar-brand text-navbar" href="index.html">BALTĀ BŪVE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <a class="navbar-brand text-navbar" href="index.html">BALTĀ BŪVE</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center">
-            <a
-              class="nav-item nav-link text-light text-navbar"
-              href="index.html"
-              >Galvenā</a
-            >
-            <a
-              class="nav-item nav-link text-light text-navbar"
-              href="pakalpojumi.html"
-              >Pakalpojumi</a
-            >
-            <a
-              class="nav-item nav-link text-light text-navbar"
-              href="kontakti.html"
-              >Kontakti</a
-            >
-          </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link text-light text-navbar" href="index.html"
+            >Galvenā</a
+          >
+          <a
+            class="nav-item nav-link text-light text-navbar"
+            href="pakalpojumi.html"
+            >Pakalpojumi</a
+          >
+          <a
+            class="nav-item nav-link text-light text-navbar"
+            href="kontakti.html"
+            >Kontakti</a
+          >
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <main>
       <div
@@ -128,7 +142,7 @@
       >
         <div class="col-md-5 p-lg-5 mx-auto my-5">
           <h1 class="display-4 fw-normal">Pakalpojumi</h1>
-          <p class="lead fw-normal">Šķirsti uz leju lai uzzinātu</p>
+          <p class="lead fw-normal">Šķirsti uz leju</p>
           <a
             class="btn btn-outline-secondary"
             href="#"
@@ -136,27 +150,25 @@
             >&#709;</a
           >
         </div>
-        <div
-          class="product-device product-device-2 shadow-sm d-none d-md-block"
-        ></div>
+      
       </div>
 
       <div id="scrollTo" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div
           class="
-            bg-dark
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
             <h2 class="display-5">
-              • Būvniecības ieceres īstenošanas risinājumi izpēte
+              Būvniecības ieceres īstenošanas risinājumi izpēte
             </h2>
             <p class="lead">Būvniecības ieceres īstenošanas juridisko, ekonomisko un
               materiāltehnisko risinājumi izpēte - alternatīvu izstrāde,
@@ -177,7 +189,7 @@
         >
           <div class="my-3 p-3">
             <h2 class="display-5">
-              • Būvniecības procesa vadība no ieceres līdz atslēgai.
+              Būvniecības procesa vadība no ieceres līdz atslēgai.
             </h2>
             <p class="lead"></p>
           </div>
@@ -198,25 +210,25 @@
           "
         >
           <div class="my-3 p-3">
-            <h2 class="display-5">• Objektu nodošanu ekspluatācijā</h2>
+            <h2 class="display-5">Objektu nodošanu ekspluatācijā</h2>
             <p class="lead"></p>
           </div>
         </div>
         <div
           class="
-            bg-primary
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
             <h2 class="display-5">
-              • Jaunu ēku un infrastruktūras objektu būvuzraudzība
+              Jaunu ēku un infrastruktūras objektu būvuzraudzība
             </h2>
             <p class="lead"></p>
           </div>
@@ -226,19 +238,19 @@
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div
           class="
-            bg-dark
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
             <h2 class="display-5">
-              • Ēku pārbūves un renovācijas būvuzraudzība
+              Ēku pārbūves un renovācijas būvuzraudzība
             </h2>
             <p class="lead"></p>
           </div>
@@ -257,7 +269,7 @@
         >
           <div class="my-3 p-3">
             <h2 class="display-5">
-              • Ēku energoefektivitātes paaugstināšanas un siltināšanas darbu
+              Ēku energoefektivitātes paaugstināšanas un siltināšanas darbu
               būvuzraudzība
             </h2>
             <p class="lead"></p>
@@ -280,26 +292,26 @@
         >
           <div class="my-3 p-3">
             <h2 class="display-5">
-              • Būvuzraudzība saskaņā ar FIDIC līgumu nosacījumu prasībām
+              Būvuzraudzība saskaņā ar FIDIC līgumu nosacījumu prasībām
             </h2>
             <p class="lead"></p>
           </div>
         </div>
         <div
           class="
-            bg-primary
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
             <h2 class="display-5">
-              • Būvniecības līgumu pārvaldība, izpildes uzraudzība
+              Būvniecības līgumu pārvaldība, izpildes uzraudzība
             </h2>
             <p class="lead"></p>
           </div>
@@ -309,18 +321,18 @@
       <div id="scrollTo" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div
           class="
-            bg-dark
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
-            <h2 class="display-5">• Pasūtītāja interešu pārstāvniecība</h2>
+            <h2 class="display-5">Pasūtītāja interešu pārstāvniecība</h2>
             <p class="lead">
               būvniecības procesā gan veicot celtniecības, gan projektēšanas
               darbus, gan būvuzraudzībā
@@ -341,7 +353,7 @@
         >
           <div class="my-3 p-3">
             <h2 class="display-5">
-              • Dokumentu sagatavošana visu nepieciešamo atļauju saņemšanai
+              Dokumentu sagatavošana visu nepieciešamo atļauju saņemšanai
             </h2>
             <p class="lead"></p>
           </div>
@@ -362,25 +374,25 @@
           "
         >
           <div class="my-3 p-3">
-            <h2 class="display-5">• Būvdarbu vadīšana un organizēšana</h2>
+            <h2 class="display-5">Būvdarbu vadīšana un organizēšana</h2>
             <p class="lead"></p>
           </div>
         </div>
         <div
           class="
-            bg-primary
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
             <h2 class="display-5">
-              • Labāko risinājumu izvēle pasūtītāja vajadzību realizēšanai,
+              Labāko risinājumu izvēle pasūtītāja vajadzību realizēšanai,
               efektivizējot darbu izpildes, gaitu, secību, struktūru un
               termiņus.
             </h2>
@@ -395,18 +407,18 @@
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div
           class="
-            bg-dark
+            bg-light
             me-md-3
             pt-3
             px-3
             pt-md-5
             px-md-5
-            text-center text-white
+            text-center 
             overflow-hidden
           "
         >
           <div class="my-3 py-3">
-            <h2 class="display-5">• Būvdarbu juridiskās atbilstības audits</h2>
+            <h2 class="display-5">Būvdarbu juridiskās atbilstības audits</h2>
             <p class="lead">
               audits Eiropas Savienības fondu finansēto un citu projektu
               ietvaros plānotiem projektiem un veiktajiem būvdarbiem.
@@ -427,7 +439,7 @@
         >
           <div class="my-3 p-3">
             <h2 class="display-5">
-              • Pirmsaudita konsultācijas Eiropas Savienības fondu finansējuma
+              Pirmsaudita konsultācijas Eiropas Savienības fondu finansējuma
               saņēmējiem
             </h2>
             <p class="lead">
@@ -453,11 +465,11 @@
         ></div>
 
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal">Vai ir jautajumi?</h1>
-          <p class="lead fw-normal">Raksti mums</p>
+          <h1 class="display-4 fw-normal">Vai ir jautājumi?</h1>
+          <p class="lead fw-normal"></p>
           <a
             class="btn btn-outline-secondary"
-            ahref="mailto:pasts@baltabuve.lv"
+            href="mailto:pasts@baltabuve.lv"
           >Raksti mums</a
           >
           <p class="lead fw-normal">pasts@baltabuve.lv</p>
@@ -474,7 +486,7 @@
       <div class="row">
         <div class="col-12 col-md">
           <img src="img/bb.png" />
-          <small class="d-block mb-3 text-muted">© 2021</small>
+          <small class="d-block mb-3 text-muted">© 2021-2022 SIA "BALTĀ BŪVE"</small>
         </div>
       </div>
     </footer>
@@ -484,5 +496,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script src="scroll.js"></script>
+
+
   </body>
 </html>
