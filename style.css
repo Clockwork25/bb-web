@@ -10,6 +10,10 @@ html {
   font-family: "Raleway", sans-serif !important;
 }
 
+body{
+  color: rgb(0, 120, 168) !important;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -34,9 +38,8 @@ html {
 
 .text-custom-big {
   font-family: "Raleway", sans-serif !important;
-  color: rgb(0, 120, 168);
+  color: rgb(0, 120, 168) !important;
   font-weight: 400;
-  text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
 .text-custom-small {
   font-family: "Raleway", sans-serif !important;
