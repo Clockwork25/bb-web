@@ -1,5 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap");
+/*
+    font-family: 'Raleway', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  text-align: center;
+}
+
+.btn {
+  z-index: 2;
+}
 .container {
-  max-width: 960px;
+  max-width: 100%;
 }
 
 .text-navbar {
@@ -15,12 +34,22 @@
   font-weight: 400;
 }
 
+.text-custom-big-title {
+  font-family: "Raleway", sans-serif !important;
+  color: rgb(0, 120, 168);
+  font-weight: 700;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  font-size: 1rem;
+}
+
 .text-custom-big {
   font-family: "Raleway", sans-serif !important;
   color: rgb(0, 120, 168);
-  font-weight: 400;
+  font-weight: 200;
   text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  font-size: 1rem;
 }
+
 .text-custom-small {
   font-family: "Raleway", sans-serif !important;
   color: rgb(0, 120, 168) !important;
@@ -62,7 +91,7 @@
 .flex-equal > * {
   flex: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .flex-md-equal > * {
     flex: 1;
   }

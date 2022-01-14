@@ -1,0 +1,47 @@
+# BROWSER CACHING USING EXPIRES HEADERS
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+  
+    # Images
+    ExpiresByType image/jpeg "access plus 1 hour"
+    ExpiresByType image/gif "access plus 1 hour"
+    ExpiresByType image/png "access plus 1 hour"
+    ExpiresByType image/webp "access plus 1 hour"
+    ExpiresByType image/svg+xml "access plus 1 hour"
+    ExpiresByType image/x-icon "access plus 1 hour"
+  
+    # Video
+    ExpiresByType video/mp4 "access plus 1 hour"
+    ExpiresByType video/mpeg "access plus 1 hour"
+
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 hour"
+    ExpiresByType text/javascript "access plus 1 hour"
+    ExpiresByType application/javascript "access plus 1 hour"
+
+    # Others
+    ExpiresByType application/pdf "access plus 1 hour"
+    ExpiresByType application/x-shockwave-flash "access plus 1 hour"
+
+</IfModule>
+
+# BROWSER CACHING USING CACHE-CONTROL HEADERS
+
+<ifModule mod_headers.c> 
+    # One year for image and video files
+    <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp)$">
+        Header set Cache-Control "max-age=7200, public"
+    </filesMatch>
+
+    # One month for JavaScript and PDF files
+    <filesMatch ".(js|pdf)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+
+    # One week for CSS files
+    <filesMatch ".(css)$">
+        Header set Cache-Control "max-age=7200, public"
+    </filesMatch>
+
+</ifModule>
