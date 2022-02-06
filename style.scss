@@ -3,42 +3,35 @@
     font-family: 'Raleway', sans-serif;
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
 /*font-family: 'Open Sans', sans-serif;*/
+
 html {
   font-family: "Raleway", sans-serif !important;
 }
 
 body {
-  color: #0078a8 !important;
+  color: rgb(0, 120, 168) !important;
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .jumbotron {
   margin-bottom: 0% !important;
 }
-
 .text-navbar {
   font-family: "Raleway", sans-serif !important;
   font-weight: 400;
 }
-
 .text-footer {
   font-family: "Raleway", sans-serif !important;
   font-weight: 200;
   font-size: small;
 }
-
 .numbers-custom {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 400;
@@ -46,24 +39,23 @@ body {
 
 .text-custom-big {
   font-family: "Raleway", sans-serif !important;
-  color: #0078a8 !important;
+  color: rgb(0, 120, 168) !important;
   font-weight: 400;
 }
-
 .text-custom-small {
   font-family: "Raleway", sans-serif !important;
-  color: #0078a8 !important;
+  color: rgb(0, 120, 168) !important;
   font-weight: 500;
 }
 
 .text-custom-small-link {
   font-family: "Raleway", sans-serif !important;
-  color: #0077ff !important;
+  color: rgb(0, 119, 255) !important;
   font-weight: 500;
 }
 
 .text-custom-small-link:hover {
-  color: #f0802b !important;
+  color: rgb(240, 128, 43) !important;
   font-weight: 700;
 }
 
@@ -77,32 +69,28 @@ body {
   background: white;
   border-radius: 1rem;
   border-width: 1px;
-  border-color: #0078a8;
-  color: #0078a8;
+  border-color: rgb(0, 120, 168);
+  color: rgb(0, 120, 168);
   width: 100px;
   height: 40px;
-  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both !important;
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both !important;
   animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both !important;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
-}
 
-.button:hover {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  background: #0078a8;
-  color: white;
-}
-
-.button a {
-  text-decoration: none !important;
-  color: #0078a8;
-}
-
-.button a:hover {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  color: white;
+  &:hover {
+    transition: 0.2s;
+    background: rgb(0, 120, 168);
+    color: white;
+  }
+  a {
+    text-decoration: none !important;
+    color: rgb(0, 120, 168);
+    &:hover {
+      transition: 0.2s;
+      color: white;
+    }
+  }
 }
 
 @-webkit-keyframes shake-horizontal {
@@ -133,7 +121,6 @@ body {
     transform: translateX(-8px);
   }
 }
-
 @keyframes shake-horizontal {
   0%,
   100% {
@@ -176,15 +163,19 @@ body {
   text-align: center;
   font-size: 18px;
   background: #f8f9fa !important;
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -192,22 +183,17 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 .row {
   --bs-gutter-x: 1 !important;
 }
 
 .rekv {
-  display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin: 0px;
 }
 
@@ -220,18 +206,14 @@ body {
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 
 @media (min-width: 800px) {
   .grid-container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[1];
-        grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     margin-top: 3rem;
   }
   .swiper {
@@ -239,8 +221,9 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+}
 .img-slider {
   width: 300px;
   height: 200px;
 }
-/*# sourceMappingURL=style.css.map */
