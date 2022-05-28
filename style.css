@@ -12,6 +12,14 @@ body {
   color: #0078a8 !important;
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +93,7 @@ body {
   animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  padding: 0;
 }
 
 .button:hover {
